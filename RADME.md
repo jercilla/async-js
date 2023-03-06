@@ -1,25 +1,37 @@
-# async
+# async-js
+
 Mostrar el resultado de una suma en un div de una página al pulsar un botón
 
-#1 div resultado
+# 1 div resultado
+
+```
 <body>
   <div id="resultado">¿?</div>
 </body>
+```
 
-#2 botón sumar
+# 2 botón sumar
+
+```
 <body>
   <div id="resultado">--</div>
   <button>Sumar dos números</button>
 </body>
+```
 
-#3 onclick
+# 3 onclick
+
+```
 <body>
   <div id="resultado">--</div>
   <button onclick="document.getElementById('resultado').innerText = 1 + 2">Sumar dos números</button>
 </body>
+```
 
 
-#4 función suma
+# 4 función suma
+
+```
 <script>
   function sumar() {
     document.getElementById('suma').innerText = 1 + 2
@@ -29,8 +41,11 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
   <div id="resultado">--</div>
   <button onclick="sumar()">Sumar dos números</button>
 </body>
+```
 
-#4 función suma
+# 4 función suma
+
+```
 <script>
   function sumar() {
     const unNumero = 1
@@ -45,8 +60,11 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
   <div id="resultado">--</div>
   <button onclick="sumar()">Sumar dos números</button>
 </body>
+```
 
-#5 obtener números a sumar
+# 5 obtener números a sumar
+
+```
 <script>
   function sumar() {
     const unNumero = 1
@@ -57,9 +75,12 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
       document.getElementById('suma').innerText = textoAMostrar
   }
 </script>
+```
 
 
-#6 obtener números a sumar tardando
+# 6 obtener números a sumar con retardo
+
+```
 <script>
   function sumar() {
   const unNumero = obtenerPrimerNumero()
@@ -70,8 +91,11 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
   document.getElementById('suma').innerText = textoAMostrar //1 + [object Promise] = 1[object Promise]
 }
 </script>
+```
 
-#7 promise then
+# 7 promise: then
+
+```
 <script>
   function sumar() {
     const unNumero = obtenerPrimerNumero()
@@ -86,8 +110,11 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
     )
   }
 </script>
+```
 
-#7 promise await
+# 7 promise await
+
+```
 <script>
   async function sumar() {
     const unNumero = obtenerPrimerNumero()
@@ -97,4 +124,5 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
     document.getElementById('suma').innerText = textoAMostrar
   }
 </script>
+```
 
