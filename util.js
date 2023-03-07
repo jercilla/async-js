@@ -7,5 +7,5 @@ function obtenerSegundoNumero() {
 }
 
 function obtenerSegundoNumeroTardandoMucho(seg = 5) {
-  return new Promise((r) => setTimeout(r(3), seg * 1000));
+  return new Promise((r) => setTimeout(() => r(2), seg * 1000));
 }

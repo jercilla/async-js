@@ -118,7 +118,7 @@ Mostrar el resultado de una suma en un div de una página al pulsar un botón
 <script>
   async function sumar() {
     const unNumero = obtenerPrimerNumero()
-    const otroNumero = await obtenerSegundoNumero()
+    const otroNumero = await obtenerSegundoNumeroTardandoMuchos()
     const resultado = unNumero + otroNumero
     const textoAMostrar = unNumero + ' + ' + otroNumero + ' = ' + resultado
     document.getElementById('suma').innerText = textoAMostrar
